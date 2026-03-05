@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vishu's World</title>
+
+<style>
+
+body{
+font-family: Arial;
+text-align:center;
+background:linear-gradient(#ffd6e7,#ffeef5);
+padding:40px;
+}
+
+.page{
+display:none;
+}
+
+.active{
+display:block;
+}
+
+button{
+padding:10px 20px;
+margin-top:20px;
+border:none;
+background:#ff5fa2;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+img{
+width:250px;
+border-radius:15px;
+margin:10px;
+}
+
+</style>
+
+<script>
+
+function nextPage(id){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+
+</script>
+
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<div class="page active">
+
+<h1>Welcome to Vishu's World 🌸</h1>
+
+<p>
+A small little world dedicated to the person  
+who listens to my random talks,  
+my overthinking, my bakwas,  
+and still stays.  
+</p>
+
+<p>
+Vishu, you don’t even realize  
+how special you are to me.
+</p>
+
+<p>
+From random laughs to serious talks,  
+from college chaos to silent understanding…  
+you somehow became my comfort place.
+</p>
+
+<button onclick="nextPage('page2')">Enter the world</button>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div id="page2" class="page">
+
+<h2>Our Song 🎵</h2>
+
+<p>
+Every friendship has a song.  
+And this one reminds me of us.
+</p>
+
+<audio controls>
+<source src="tu-hai-to.mp3" type="audio/mpeg">
+</audio>
+
+<p>
+"Tu hai to dil dhadakta hai  
+Tu hai to saans aati hai"
+</p>
+
+<button onclick="nextPage('page3')">Next</button>
+
+</div>
+
+<!-- PAGE 3 -->
+
+<div id="page3" class="page">
+
+<h2>Dictionary of Vishu 📖</h2>
+
+<p><b>Vishu (noun)</b></p>
+
+<p>
+1. A human who gives unlimited chocolates.  
+</p>
+
+<p>
+2. A person who somehow listens to my  
+non-stop nonsense and still doesn't run away.
+</p>
+
+<p>
+3. Someone who becomes loud when I am around  
+because she feels comfortable.
+</p>
+
+<p>
+4. My safe space in human form.
+</p>
+
+<button onclick="nextPage('page4')">Next</button>
+
+</div>
+
+<!-- PAGE 4 -->
+
+<div id="page4" class="page">
+
+<h2>Our Memories 📸</h2>
+
+<img src="photos/photo1.jpg">
+<img src="photos/photo2.jpg">
+<img src="photos/photo3.jpg">
+
+<p>
+Every photo is a memory  
+and every memory has you in it.
+</p>
+
+<button onclick="nextPage('page5')">Next</button>
+
+</div>
+
+<!-- PAGE 5 -->
+
+<div id="page5" class="page">
+
+<h2>For Vishu 💌</h2>
+
+<p>
+Thank you for being the person  
+who listens to my stupid talks.
+</p>
+
+<p>
+Thank you for the chocolates.
+</p>
+
+<p>
+Thank you for being loud around me  
+because that means you feel safe with me.
+</p>
+
+<p>
+And thank you for being my best friend.
+</p>
+
+<p>
+I hope one day when you look back  
+at our friendship…  
+you'll realize how much you mean to me.
+</p>
+
+<p>
+– From the person who will always listen to you 💛
+</p>
+
+</div>
+
+</body>
+</html>
